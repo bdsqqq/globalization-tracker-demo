@@ -13,11 +13,20 @@
 }
 
 #sideNav > ul > li {
-  padding: 0.75rem 2rem;
+  padding: 1rem 2rem 0.75rem;
   border-left: 2px solid $gray-10;
 }
 
-#sideNav > ul > li:hover {
+#sideNav > ul > li:first-of-type:hover {
+  background-color: $gray-20;
+  border-left: 2px solid $blue-60;
+}
+
+#sideNav > ul > li > ul > li {
+  padding: 0.75rem 2rem;
+}
+
+#sideNav > ul > li > ul > li:hover {
   background-color: $gray-20;
   border-left: 2px solid $blue-60;
 }
