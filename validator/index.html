@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Globalization Tracker - Validator</title>
+</head>
+
+<body>
+  <header>
+    <span><strong>IBM</strong> Globalization Tracker <strong>Validator</strong></span>
+    <nav >
+      <ul>
+        <li><a href="/">Tracker</a></li>
+        <li class="im-here"><a  href="/validator/">Validator</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Select a file (xlsx only)</h2>
+      <br />
+      <form id="fileForm">
+
+        <br>
+        <button type="submit" id="validate-btn" class="btn-primary">Validate</button>
+      </form>
+      
+    </section>
+    <section class="output">
+      <h1 id="logTitle">Upload a file to start the validator</h1>
+      <br>
+      <code id="log"></code>
+      <button id="upload-btn" class="btn-primary none">Upload</button>
+    </section>
+  </main>
+  <script type="module" src="/validator/validate.js"></script>
+</body>
+
+</html>

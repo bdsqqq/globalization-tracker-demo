@@ -1,0 +1,56 @@
+@import "@carbon/colors/scss/colors";
+
+#bodyWrapper {
+  display: flex;
+  flex-direction: column;
+
+  padding-top: 3rem; /*padding top accomodates for fixed header*/
+}
+
+#sideNav {
+  background-color: $gray-10;
+  height: 100%;
+}
+
+#sideNav > ul > li {
+  padding: 0.75rem 2rem;
+  border-left: 2px solid $gray-10;
+}
+
+#sideNav > ul > li:hover {
+  background-color: $gray-20;
+  border-left: 2px solid $blue-60;
+}
+
+main {
+  min-height: 100vh;
+}
+
+main > section {
+  padding: 1rem 2rem;
+}
+
+main > section:not(:first-of-type) {
+  margin-top: 2rem;
+}
+
+#rangeInputs {
+  display: flex;
+}
+
+#rangeInputs > div {
+  display: flex;
+  flex-direction: column;
+}
+
+#rangeInputs > div:not(:first-of-type) {
+  margin-left: 1rem;
+}
+
+@media screen and (min-width: 1056px) {
+  #bodyWrapper {
+    display: grid;
+
+    grid-template-columns: 16rem auto;
+  }
+}
