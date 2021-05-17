@@ -8,6 +8,39 @@ main {
   min-height: 100vh;
 }
 
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  cursor: pointer;
+  content: 'Drag or Select a file';
+  
+  width: 100%;
+  height: 125px;
+  
+  outline: none;
+  white-space: nowrap;
+  -webkit-user-select: none;
+}
+.custom-file-input:hover {
+  color: $blue-60;
+  border-color: $blue-60;
+}
+.custom-file-input:active {
+  color: $blue-70;
+  border-color: $blue-70;
+}
+.custom-file-input{
+  border: 2px dashed $gray-80;
+
+  margin: 0 auto;
+}
+
+
 #falseBox {
   display: grid;
   align-content: center;

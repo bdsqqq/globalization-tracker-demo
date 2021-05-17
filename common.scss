@@ -67,13 +67,17 @@ header > nav > ul > li > a {
   border-bottom: 4px solid $blue-60;
 }
 
-input {
+input[type=text], input[type=password], input[type=number], textarea {
   background-color: $gray-10;
   border: none;
   border-bottom: 1px solid $gray-30;
   min-height: 2.5rem;
   min-height: 3rem;
   padding: calc(0.875rem - 3px) 12px calc(0.875rem - 3px) 12px;
+}
+
+input[type=file] {
+  
 }
 
 button {
