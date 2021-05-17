@@ -23,6 +23,7 @@ let LogTitleNoErrors = `Spreadsheet validated, 0 issues found.`
 
 function validate(e) {
   e.preventDefault();
+  console.log(e.target[0].files[0])
   logTitle.classList.add("none");
   log.innerHTML = ""
   //uploadBtn.classList.add("none");
