@@ -44,7 +44,12 @@ main > section {
   color: $green-50;
 }
 
-.fail {
+.error {
   font-weight: bold;
   color: $red-50;
+}
+
+.warn {
+  font-weight: bold;
+  color: $yellow-50;
 }
