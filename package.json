@@ -8,7 +8,7 @@
   },
   "devDependencies": {
     "sass": "^1.32.10",
-    "vite": "^8.2.1"
+    "vite": "^8.2.4"
   },
   "dependencies": {
     "@carbon/colors": "^10.23.0"
